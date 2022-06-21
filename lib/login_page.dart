@@ -66,7 +66,7 @@ class _LoginPageState extends State<LoginPage> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  Text('Login Test', style: TextStyle(fontSize: 42), 
+                  Text('QR_WILLARD', style: TextStyle(fontSize: 42), 
                 ),
                 SizedBox(
                   height:60
@@ -87,7 +87,7 @@ class _LoginPageState extends State<LoginPage> {
                           child: TextField(
                               controller: _emailController,
                               decoration: InputDecoration(
-                              hintText: 'Email')
+                              hintText: 'User')
                               ),
                         ),
                          Padding(
@@ -116,7 +116,7 @@ class _LoginPageState extends State<LoginPage> {
                   child: RaisedButton(
                     color:Colors.lightBlueAccent,
                     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-                    child: Text('Testing Button', 
+                    child: Text('Iniciar Sesion', 
                     style: TextStyle(fontSize: 22, color: Colors.white),),
                     onPressed: _emailController.text == "" || _passController == "" ? 
                     null:()
@@ -130,7 +130,7 @@ class _LoginPageState extends State<LoginPage> {
                 SizedBox(
                           height:20
                         ),
-                        FlatButton(onPressed: () {}, child: Text('Forgot Testing'))
+                        FlatButton(onPressed: () {}, child: Text('¿Olvido su contraseña?'))
                 ],
               ),
         ),
